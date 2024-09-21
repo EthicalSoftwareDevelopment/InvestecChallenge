@@ -32,7 +32,7 @@ namespace InvestecChallenge.WebAutomationTesting.Tests
             {
                 WaitUntil = WaitUntilState.NetworkIdle
             });
-            await page.GetByLabel("Accept all cookies").ClickAsync();
+            await page.GetByRole(AriaRole.Button, new() { Name = "Accept all cookies" }).ClickAsync();
 
             await SearchDialogForInterestRatesPage(page);
 
@@ -53,14 +53,10 @@ namespace InvestecChallenge.WebAutomationTesting.Tests
         private static async Task ManualOverrideInCaseOfMissingContent(IPage page)
         {
             var pageLink = page.GetByText("understanding-interest-rates");
-            if (pageLink.ToString() == String.Empty)
+            if (! await pageLink.IsVisibleAsync())
             {
                 Console.WriteLine("Item not found on page: Manual resolution of url implemented");
-                await page.GotoAsync("https://www.investec.com/en_za/focus/money/understanding-interest-rates.html",
-                    new PageGotoOptions
-                    {
-                        WaitUntil = WaitUntilState.NetworkIdle
-                    });
+                await page.GotoAsync("https://www.investec.com/en_za/focus/money/understanding-interest-rates.html");
             }
         }
 
