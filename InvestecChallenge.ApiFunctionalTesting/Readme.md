@@ -12,8 +12,9 @@ No installation/setup required.
 
 ## Execution of Tests
 
-1. Go into the corresponding project.
-2. Find the Tests folder
-3. Open the Fixture file.
-4. Right-click on the individual tests.
-5. Select "Run Tests".
+1. Build the Solution
+2. Go into the corresponding project.
+3. Find the Tests folder
+4. Open the Fixture file.
+5. Right-click on the individual tests.
+6. Select "Run Tests".
