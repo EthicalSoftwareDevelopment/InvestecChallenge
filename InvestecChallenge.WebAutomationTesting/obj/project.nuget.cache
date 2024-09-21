@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PCHwlqRbfdQ=",
+  "dgSpecHash": "fdak6l4lCX8=",
   "success": true,
-  "projectFilePath": "C:\\Dev\\UI-Automation\\UI-Automation\\UI-Automation.Tests\\InvestecChallenge.WebAutomationTesting.csproj",
+  "projectFilePath": "C:\\Dev\\InvestecTechnicalChallenge\\InvestecChallenge.WebAutomationTesting\\InvestecChallenge.WebAutomationTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dbmaynard\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\dbmaynard\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
